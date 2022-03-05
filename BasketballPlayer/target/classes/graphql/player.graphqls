@@ -1,0 +1,17 @@
+type Player {
+	id: ID!
+	playerName: String!
+	playerSurname: String!
+	playerPosition: String!
+}
+
+type Query {
+	findAllPlayers: [Player]!
+	findByIdPlayer(id: ID):Player
+}
+
+type Mutation {
+	createPlayer(playerName: String!, playerSurname: String!,playerPosition: String!,): Player!
+	deletePlayer(id: ID!): Boolean
+	
+}
