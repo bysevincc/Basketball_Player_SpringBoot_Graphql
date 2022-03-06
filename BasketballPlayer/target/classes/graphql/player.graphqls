@@ -11,7 +11,7 @@ type Query {
 }
 
 type Mutation {
-	createPlayer(playerName: String!, playerSurname: String!,playerPosition: String!,): Player!
-	deletePlayer(id: ID!): Boolean
+	createPlayer(playerName: String! @length(max: 5), playerSurname: String!,playerPosition: String!,): Player!
+	deletePlayer(id: ID): Boolean
 	
 }

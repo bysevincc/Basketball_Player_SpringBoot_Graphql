@@ -1,0 +1,8 @@
+mutation {
+    createPlayer(playerName: "Cedi",playerSurname: "Osman",playerPosition: "PG"){
+        id
+        playerName
+        playerSurname
+        playerPosition
+    }
+}

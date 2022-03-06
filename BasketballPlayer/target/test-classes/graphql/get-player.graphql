@@ -1,0 +1,8 @@
+mutation {
+    findByIdPlayer(id: "1"){
+        id
+        playerName
+        playerSurname
+        playerPosition
+    }
+}
